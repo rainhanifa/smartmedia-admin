@@ -3200,9 +3200,7 @@ a.tile:hover {
 .mail-content {
     margin-left: 150px;
 }
-.mail-content-announcement {
-    margin-left: 0px;
-}
+
 .mail-nav > ul,
 .mail-toolbar,
 .mail-list {
