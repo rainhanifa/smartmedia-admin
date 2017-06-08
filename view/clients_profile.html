@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="../css/flaty.css">
         <link rel="stylesheet" href="../css/flaty-responsive.css">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/edit.css">
 
         <link rel="shortcut icon" href="../img/favicon.png">
     </head>
@@ -400,7 +401,7 @@
                 <!-- BEGIN Page Title -->
                 <div class="page-title">
                     <div>
-                        <h1><i class="fa fa-user"></i>Client Profile</h1>
+                        <h1><i class="fa fa-user"></i>Client's Detail</h1>
                     </div>
                 </div>
                 <!-- END Page Title -->
@@ -588,34 +589,28 @@
                                         <div class="tab-pane fade" id="invoice">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <div class="well well-lg">
-                                                        <br/><br/>
+                                                    <div class="panel-invoice">
                                                         <p class="text-right">4</p>
                                                         <p class="text-right">INVOICES</p>
-                                                        <br/><br/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <div class="well well-lg">
-                                                        <br/><br/>
+                                                    <div class="panel-invoice">
                                                         <p class="text-right">1</p>
                                                         <p class="text-right">INVOICE DUE</p>
-                                                        <br/><br/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <div class="well well-lg">
-                                                        <br/><br/>
+                                                    <div class="panel-invoice">
                                                         <p class="text-right">Rp 667</p>
                                                         <p class="text-right">CLIENT'S BALANCE</p>
-                                                        <br/><br/>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="table-responsive" style="border:0">
-                                                        <table class="table table-advance" id="table1">
+                                                        <table class="table" id="table1">
                                                             <thead>
                                                                 <tr>
                                                                     <th>Invoice #</th>
@@ -634,7 +629,7 @@
                                                                     <td>12/05/2017</td>
                                                                     <td>Rp 123.000</td>
                                                                     <td>13/05/2017</td>
-                                                                    <td>Paid</td>
+                                                                    <td><span class="label label-success">Paid</span></td>
                                                                     <td>Detail</td>
                                                                 </tr>
                                                                 <tr>
@@ -643,7 +638,7 @@
                                                                     <td>13/06/2017</td>
                                                                     <td>Rp 25.000</td>
                                                                     <td>14/05/2017</td>
-                                                                    <td>Paid</td>
+                                                                    <td><span class="label label-gray">Canceled</span></td>
                                                                     <td>Detail</td>
                                                                 </tr>
                                                                 <tr class="table-flag-orange">
@@ -652,7 +647,7 @@
                                                                     <td>14/06/2017</td>
                                                                     <td>Rp 90.000</td>
                                                                     <td>15/05/2017</td>
-                                                                    <td>Paid</td>
+                                                                    <td><span class="label label-success">Paid</span></td>
                                                                     <td>Detail</td>
                                                                 </tr>
                                                                 <tr>
@@ -661,7 +656,7 @@
                                                                     <td>15/06/2017</td>
                                                                     <td>Rp 64.000</td>
                                                                     <td>16/05/2017</td>
-                                                                    <td>Unpaid</td>
+                                                                    <td><span class="label label-warning">Unpaid</span></td>
                                                                     <td>Detail</td>
                                                                 </tr>
                                                             </tbody>
@@ -673,27 +668,21 @@
                                         <div class="tab-pane fade" id="sites">
                                             <div class="row">
                                                 <div class="col-md-4">
-                                                    <div class="well well-lg">
-                                                        <br/><br/>
+                                                    <div class="panel-invoice">
                                                         <p class="text-right">3</p>
                                                         <p class="text-right">TOTAL SITE</p>
-                                                        <br/><br/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <div class="well well-lg">
-                                                        <br/><br/>
+                                                    <div class="panel-invoice">
                                                         <p class="text-right">200 MB / 2 GB</p>
                                                         <p class="text-right">TOTAL STORAGE</p>
-                                                        <br/><br/>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <div class="well well-lg">
-                                                        <br/><br/>
+                                                    <div class="panel-invoice">
                                                         <p class="text-right">3</p>
                                                         <p class="text-right">WEBMAIL ACCOUNT</p>
-                                                        <br/><br/>
                                                     </div>
                                                 </div>
                                             </div>
@@ -707,20 +696,32 @@
                                                         <div class="col-md-9">
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <p>Site Name</p>
-                                                                    <p>Site Address</p>
-                                                                    <p>Web Mail</p>
+                                                                    <p><strong>Site Name</strong></p>
                                                                 </div>
                                                                 <div class="col-md-8">
                                                                     <p>My Site</p>
-                                                                    <p>subdomain.voucher.co.id</p>
-                                                                    <p>subdomain@voucher.co.id</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <p><strong>Site Address</strong></p>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <a href="#">subdomain.voucher.co.id</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <p><strong>Web Mail</strong></p>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <a href="#">subdomain@voucher.co.id</a>
                                                                 </div>
                                                             </div>
                                                             <br/>
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <p>Storage</p>
+                                                                    <p><strong>Storage</strong></p>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <p>Used</p>
@@ -733,7 +734,7 @@
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <p>Bandwith</p>
+                                                                    <p><strong>Bandwith</strong></p>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <p>Used</p>
@@ -754,20 +755,32 @@
                                                         <div class="col-md-9">
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <p>Site Name</p>
-                                                                    <p>Site Address</p>
-                                                                    <p>Web Mail</p>
+                                                                    <p><strong>Site Name</strong></p>
                                                                 </div>
                                                                 <div class="col-md-8">
                                                                     <p>My Site</p>
-                                                                    <p>subdomain.voucher.co.id</p>
-                                                                    <p>subdomain@voucher.co.id</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <p><strong>Site Address</strong></p>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <a href="#">subdomain.voucher.co.id</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <p><strong>Web Mail</strong></p>
+                                                                </div>
+                                                                <div class="col-md-8">
+                                                                    <a href="#">subdomain@voucher.co.id</a>
                                                                 </div>
                                                             </div>
                                                             <br/>
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <p>Storage</p>
+                                                                    <p><strong>Storage</strong></p>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <p>Used</p>
@@ -780,7 +793,7 @@
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-md-4">
-                                                                    <p>Bandwith</p>
+                                                                    <p><strong>Bandwith</strong></p>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <p>Used</p>
