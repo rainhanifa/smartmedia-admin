@@ -99,6 +99,9 @@
 .mail-content-announcement {
     margin-left: 0px;
 }
+.distance{
+		padding-bottom: 17px;
+	}
 
 @media screen and (max-width: 1359px){
     .column-edit{
