@@ -100,8 +100,16 @@
     margin-left: 0px;
 }
 .distance{
-		padding-bottom: 17px;
-	}
+	padding-bottom: 17px;
+}
+.distancee{
+    padding-bottom: 4px;
+    padding-left: 1px;
+}
+
+.d_jarak{
+    margin: 0 7px 0 7px;
+}
 
 @media screen and (max-width: 1359px){
     .column-edit{
