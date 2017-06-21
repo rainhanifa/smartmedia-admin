@@ -3,13 +3,19 @@
 
 	class Transaction extends CI_Controller {
 		public function index(){
-			//list
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('transaction/transaction.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function invoice(){
 			//detail
 		}
 		public function awaiting(){
-			//list awaiting
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('transaction/transaction_awaiting.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function confirm(){
 			//action confirm
