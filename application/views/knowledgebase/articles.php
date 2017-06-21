@@ -13,7 +13,7 @@
                     <ul class="breadcrumb">
                         <li>
                             <i class="fa fa-home"></i>
-                            <a href="index.html">Home</a>
+                            <a href="<?php echo base_url("dashboard");?>">Home</a>
                             <span class="divider"><i class="fa fa-angle-right"></i></span>
                         </li>
                         <li class="active">Articles</li>
@@ -75,7 +75,7 @@
                 </div>                
 
                 <div class="box">
-                    <a href="knowledgebase_create.html" class="btn btn-info">ADD NEW</a>
+                    <a href="<?php echo base_url("knowledgebase/add");?>" class="btn btn-info">ADD NEW</a>
 					<br/>
 					<br/>        
                     <div class="table-responsive">
@@ -103,7 +103,7 @@
 											<input type="checkbox" checked />
 										</div>
 									</td>
-									<td><a href="knowledgebase_update.html" class="glyphicon glyphicon-pencil"></a></td>
+									<td><a href="<?php echo base_url("knowledgebase/update");?>" class="glyphicon glyphicon-pencil"></a></td>
 									<td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
                                     
                                 </tr>
@@ -118,7 +118,7 @@
 											<input type="checkbox" checked />
 										</div>
 									</td>
-									<td><a href="knowledgebase_update.html" class="glyphicon glyphicon-pencil"></a></td>
+									<td><a href="<?php echo base_url("knowledgebase/update");?>" class="glyphicon glyphicon-pencil"></a></td>
 									<td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
 									
                                 </tr>
@@ -133,7 +133,7 @@
 											<input type="checkbox" checked />
 										</div>
 									</td>
-									<td><a href="knowledgebase_update.html" class="glyphicon glyphicon-pencil"></a></td>
+									<td><a href="<?php echo base_url("knowledgebase/update");?>" class="glyphicon glyphicon-pencil"></a></td>
 									<td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
 								</tr>	
 									
@@ -148,7 +148,7 @@
 											<input type="checkbox" checked />
 										</div>
 									</td>
-									<td><a href="knowledgebase_update.html" class="glyphicon glyphicon-pencil"></a></td>
+									<td><a href="<?php echo base_url("knowledgebase/update");?>" class="glyphicon glyphicon-pencil"></a></td>
 									<td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
                                 </tr>                                                       
                             </tbody>
