@@ -211,7 +211,7 @@
                         </a>
                     </li>
 
-                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                    <li <?php echo ($active =="transaction")? "class='active'" : "" ?>>
                         <a class="dropdown-toggle">
                             <i class="fa fa-list-alt"></i>
                             <span>Transaction</span>
@@ -228,22 +228,22 @@
                     </li>
 
 
-                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                    <li <?php echo ($active =="clients")? "class='active'" : "" ?>>
                         <a href="<?php echo base_url("clients");?>">
                             <i class="fa fa-star"></i>
                             <span>Clients</span>
                         </a>
 
-                    </li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                    </li>
 
-                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                    <li <?php echo ($active =="sites")? "class='active'" : "" ?>>
                         <a href="sites.html">
                             <i class="fa fa-desktop"></i>
                             <span>Sites</span>
                         </a>
                     </li>
 
-                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                    <li <?php echo ($active =="store")? "class='active'" : "" ?>>
                         <a href="#" class="dropdown-toggle">
                             <i class="fa fa-shopping-cart"></i>
                             <span>Store</span>
@@ -259,7 +259,7 @@
                         <!-- END Submenu -->
                     </li>
                     
-                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                    <li <?php echo ($active =="knowledgebase")? "class='active'" : "" ?>>
                         <a href="#" class="dropdown-toggle">
                             <i class="fa fa-lightbulb-o"></i>
                             <span>Knowledgebase</span>
@@ -275,7 +275,7 @@
 
                     </li>
 
-                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                    <li <?php echo ($active =="announcement")? "class='active'" : "" ?>>
                         <a href="<?php echo base_url("announcement");?>">
                             <i class="fa fa-bullhorn"></i>
                             <span>Announcement</span>
@@ -283,14 +283,14 @@
 
                     </li>
 
-                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
-                        <a href="<?php echo base_url("user");?>">
+                    <li <?php echo ($active =="users")? "class='active'" : "" ?>>
+                        <a href="<?php echo base_url("users");?>">
                             <i class="fa fa-users"></i>
                             <span>Users</span>
                         </a>
                     </li>
 					
-					<li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+					<li <?php echo ($active =="support")? "class='active'" : "" ?>>
                         <a class="dropdown-toggle">
                             <i class="fa fa-globe"></i>
                             <span>Support</span>
