@@ -1,7 +1,7 @@
 <?php
 	defined('BASEPATH') OR exit('No direct script access allowed');
 
-	class User extends CI_Controller {
+	class Users extends CI_Controller {
 		public function index(){
 			$this->load->view('template/header-admin.php');
 			$this->load->view('template/navbar-admin.php');
