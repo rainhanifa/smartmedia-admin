@@ -51,7 +51,7 @@
                                     <td>Andy Zain</td>
                                     <td>Ifkaruddin</td>
                                     <td>andyzain@gmail.com</td>
-                                    <td><a href="clients_profile.html" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
+                                    <td><a href="<?php echo base_url("clients/detail");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
                                         <a href="clients_profile.html#invoice" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
@@ -60,8 +60,8 @@
                                     <td>Ibnu Shodiqin</td>
                                     <td>Suhaemy</td>
                                     <td>ibnuaja@gmail.com</td>
-                                    <td><a href="clients_profile.html" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="clients_profile.html#invoice" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                    <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
+                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                                 <tr>                               
@@ -69,8 +69,8 @@
                                     <td>Dimas</td>
                                     <td>Virdana</td>
                                     <td>dimasgundam@gmail.com</td>
-                                    <td><a href="clients_profile.html" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="clients_profile.html#invoice" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                    <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
+                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                                 <tr>                               
@@ -78,8 +78,8 @@
                                     <td>Handharbeni</td>
                                     <td>Muhammad</td>
                                     <td>mhandharbeni@gmail.com</td>
-                                    <td><a href="clients_profile.html" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="clients_profile.html#invoice" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                    <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
+                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                                 <tr>                               
@@ -87,8 +87,8 @@
                                     <td>Luqman</td>
                                     <td>Hakim</td>
                                     <td>cakmen@gmail.com</td>
-                                    <td><a href="clients_profile.html" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="clients_profile.html#invoice" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                    <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
+                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                             </tbody>
