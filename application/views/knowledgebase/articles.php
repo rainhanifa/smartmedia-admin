@@ -78,7 +78,6 @@
                     <a href="<?php echo base_url("knowledgebase/add");?>" class="btn btn-info">ADD NEW</a>
 					<br/>
 					<br/>        
-                    <div class="table-responsive">
                         <table class="table table-advance" id="transaction-table">
                             <thead class="table-flag-blue">
                                 <tr>
@@ -153,12 +152,5 @@
                                 </tr>                                                       
                             </tbody>
                         </table>
-                    </div>
-
-                    <p class="text-right">
-                        1-12 of 46
-                        <a class="btn btn-circle disabled" href="#"><i class="fa fa-angle-left"></i></a>
-                        <a class="btn btn-circle" href="#"><i class="fa fa-angle-right"></i></a>
-                    </p>
                 </div>
                 <!-- END Main Content -->
