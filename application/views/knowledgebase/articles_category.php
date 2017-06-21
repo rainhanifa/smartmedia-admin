@@ -105,7 +105,6 @@
                     <button class="btn btn-info" data-dismiss="modal" data-toggle="modal" data-target="#add">ADD NEW</button>
 					<br/>
 					<br/>
-                    <div class="table-responsive">
                         <table class="table table-advance" id="category-table">
 							<col style="width:auto">
 							<col style="width:auto">
@@ -154,12 +153,5 @@
                                 </tr>                                                        
                             </tbody>
                         </table>
-                    </div>
-
-                    <p class="text-right">
-                        1-12 of 46
-                        <a class="btn btn-circle disabled" href="#"><i class="fa fa-angle-left"></i></a>
-                        <a class="btn btn-circle" href="#"><i class="fa fa-angle-right"></i></a>
-                    </p>
                 </div>
                 <!-- END Main Content -->
