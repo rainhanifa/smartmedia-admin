@@ -13,7 +13,7 @@
                     <ul class="breadcrumb">
                         <li>
                             <i class="fa fa-home"></i>
-                            <a href="index.html">Home</a>
+                            <a href="<?php echo base_url("dashboard");?>">Home</a>
                             <span class="divider"><i class="fa fa-angle-right"></i></span>
                         </li>
                         <li class="active">Announcement</li>
@@ -50,7 +50,7 @@
                 </div>                
 
                 <div class="box">
-                    <a href="<?php echo base_url('announcement/add')?>" class="btn btn-info">ADD NEW</a>
+                    <a href="<?php echo base_url("announcement/add");?>" class="btn btn-info">ADD NEW</a>
 					<br/>
 					<br/>        
                     <div class="table-responsive">
