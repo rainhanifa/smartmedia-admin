@@ -205,7 +205,7 @@
                 <!-- BEGIN Navlist -->
                 <ul class="nav nav-list">
                     <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
-                        <a href="index.html">
+                        <a href="<?php echo base_url("dashboard");?>">
                             <i class="fa fa-dashboard"></i>
                             <span>Dashboard</span>
                         </a>

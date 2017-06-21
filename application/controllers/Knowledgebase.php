@@ -26,7 +26,7 @@
 		public function delete(){
 			// delete
 		}
-		public function category($action){
+		public function category($action="list"){
 			switch($action){
 				case 'add'		: //view category add
 								  break;
@@ -35,6 +35,10 @@
 				case 'delete'	: //action category delete
 								  break;
 				default 		: //view category list;
+					$this->load->view('template/header-admin.php');
+					$this->load->view('template/navbar-admin.php');
+					$this->load->view('knowledgebase/articles_category.php');
+					$this->load->view('template/footer-admin.php');
 								  break;
 			}
 		}
