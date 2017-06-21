@@ -54,7 +54,7 @@
 					<br/>
 					<br/>        
                     <div class="table-responsive">
-                        <table class="table table-advance" id="transaction-table">
+                        <table class="table table-advance" id="announcement-table">
                             <thead class="table-flag-blue">
                                 <tr>
                                     <th>#</th>

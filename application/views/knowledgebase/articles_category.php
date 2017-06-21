@@ -106,7 +106,7 @@
 					<br/>
 					<br/>
                     <div class="table-responsive">
-                        <table class="table table-advance" id="transaction-table">
+                        <table class="table table-advance" id="category-table">
 							<col style="width:auto">
 							<col style="width:auto">
 							<col style="width:10%">

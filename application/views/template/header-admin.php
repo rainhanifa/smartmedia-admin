@@ -16,7 +16,6 @@
         
         <!--page specific css styles-->
         <link rel="stylesheet" href="<?php echo base_url('assets')?>/assets/data-tables/bootstrap3/dataTables.bootstrap.css" />
-          
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets')?>/assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets')?>/assets/bootstrap-switch/static/stylesheets/bootstrap-switch.css" />
         
@@ -33,6 +32,10 @@
         <script src="<?php echo base_url('assets')?>/assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url('assets')?>/assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
         <script src="<?php echo base_url('assets')?>/assets/jquery-cookie/jquery.cookie.js"></script>
+
+        <script type="text/javascript" src="<?php echo base_url('assets')?>/assets/data-tables/jquery.dataTables.js"></script>
+                <script type="text/javascript" src="<?php echo base_url('assets')?>/assets/data-tables/bootstrap3/dataTables.bootstrap.js"></script>
+                
 
         
     </head>
