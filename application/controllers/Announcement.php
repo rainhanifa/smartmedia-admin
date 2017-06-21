@@ -3,16 +3,25 @@
 
 	class Announcement extends CI_Controller {
 		public function index(){
-			//list
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('announcement/announcement.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function detail(){
 			//detail
 		}
 		public function add(){
-			// add page	
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('announcement/announcement_create.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function update(){
-			// update page
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('announcement/announcement_update.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function delete(){
 			// delete
