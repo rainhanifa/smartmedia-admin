@@ -135,7 +135,7 @@
                                     </div><br/><br/>
                                     <div class="row">
                                         <div class="col-md-12 text-center">
-                                            <a href="clients_profile.html">Back to Client Profile</a>
+                                            <a href="<?php echo base_url("transaction");?>">Back to Transaction</a>
                                         </div>
                                     </div>
                                 </div>

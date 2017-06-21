@@ -33,7 +33,7 @@
 
                 <div class="box">
                             
-                    <div class="">
+                    <div>
                         <table class="table table-advance" id="users-table">
                             <thead class="table-flag-blue">
                                 <tr>
@@ -93,11 +93,6 @@
                             </tbody>
                         </table>
                     </div>
-
-                    <p class="text-right">
-                        1-12 of 46
-                        <a class="btn btn-circle disabled" href="#"><i class="fa fa-angle-left"></i></a>
-                        <a class="btn btn-circle" href="#"><i class="fa fa-angle-right"></i></a>
-                    </p>
                 </div>
                 <!-- END Main Content -->
+                

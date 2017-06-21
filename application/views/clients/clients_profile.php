@@ -227,7 +227,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div>
-                                                        <table class="table table-advance" id="table-invoice">
+                                                        <table class="table table-advance" id="invoice-table">
                                                             <thead>
                                                                 <tr>
                                                                     <th>Invoice #</th>

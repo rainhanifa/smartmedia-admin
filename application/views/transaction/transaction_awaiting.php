@@ -115,7 +115,7 @@
                         <div class="box">
                             <div class="box-content">
                                 <div>
-                                    <table class="table table-advance" id="transaction-table">
+                                    <table class="table table-advance" id="awaiting-table">
                                         <thead>
                                             <tr>
                                                 <th>Invoice #</th>

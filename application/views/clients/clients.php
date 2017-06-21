@@ -52,7 +52,7 @@
                                     <td>Ifkaruddin</td>
                                     <td>andyzain@gmail.com</td>
                                     <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                        <a href="<?php echo base_url("clients/profile");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                                 <tr>                               
@@ -61,7 +61,7 @@
                                     <td>Suhaemy</td>
                                     <td>ibnuaja@gmail.com</td>
                                     <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                        <a href="<?php echo base_url("clients/profile");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                                 <tr>                               
@@ -70,7 +70,7 @@
                                     <td>Virdana</td>
                                     <td>dimasgundam@gmail.com</td>
                                     <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                        <a href="<?php echo base_url("clients/profile");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                                 <tr>                               
@@ -79,7 +79,7 @@
                                     <td>Muhammad</td>
                                     <td>mhandharbeni@gmail.com</td>
                                     <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                        <a href="<?php echo base_url("clients/profile");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                                 <tr>                               
@@ -88,17 +88,11 @@
                                     <td>Hakim</td>
                                     <td>cakmen@gmail.com</td>
                                     <td><a href="<?php echo base_url("clients/profile");?>" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="<?php echo base_url("clients/detail");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
+                                        <a href="<?php echo base_url("clients/profile");?>" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
                                         <a href="clients_profile.html#sites" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-
-                    <p class="text-right">
-                        1-12 of 46
-                        <a class="btn btn-circle disabled" href="#"><i class="fa fa-angle-left"></i></a>
-                        <a class="btn btn-circle" href="#"><i class="fa fa-angle-right"></i></a>
-                    </p>
                 </div>
                 <!-- END Main Content -->
