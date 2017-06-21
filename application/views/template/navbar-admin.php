@@ -1,3 +1,4 @@
+        <?php $active= $this->router->fetch_class(); ?>
         <!-- BEGIN Navbar -->
         <div id="navbar" class="navbar">
             <button type="button" class="navbar-toggle navbar-btn collapsed" data-toggle="collapse" data-target="#sidebar">
@@ -203,14 +204,14 @@
             <div id="sidebar" class="navbar-collapse collapse">
                 <!-- BEGIN Navlist -->
                 <ul class="nav nav-list">
-                    <li>
+                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
                         <a href="index.html">
                             <i class="fa fa-dashboard"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
 
-                    <li>
+                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
                         <a class="dropdown-toggle">
                             <i class="fa fa-list-alt"></i>
                             <span>Transaction</span>
@@ -219,30 +220,30 @@
 
                         <!-- BEGIN Submenu -->
                         <ul class="submenu">
-                            <li><a href="transaction.html" >All Transaction</a></li>
-                            <li><a href="transaction-awaiting.html">Awaiting Confirmation</a></li>
+                            <li><a href="<?php echo base_url("transaction");?>" >All Transaction</a></li>
+                            <li><a href="<?php echo base_url("transaction/awaiting");?>">Awaiting Confirmation</a></li>
                             <li><a href="transaction-voucher.html">Voucher Activation</a></li>
                         </ul>
                         <!-- END Submenu -->
                     </li>
 
 
-                    <li>
-                        <a href="clients.html">
+                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                        <a href="<?php echo base_url("clients");?>">
                             <i class="fa fa-star"></i>
                             <span>Clients</span>
                         </a>
 
-                    </li>
+                    </li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
 
-                    <li>
+                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
                         <a href="sites.html">
                             <i class="fa fa-desktop"></i>
                             <span>Sites</span>
                         </a>
                     </li>
 
-                    <li>
+                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
                         <a href="#" class="dropdown-toggle">
                             <i class="fa fa-shopping-cart"></i>
                             <span>Store</span>
@@ -258,7 +259,7 @@
                         <!-- END Submenu -->
                     </li>
                     
-                    <li>
+                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
                         <a href="#" class="dropdown-toggle">
                             <i class="fa fa-lightbulb-o"></i>
                             <span>Knowledgebase</span>
@@ -274,7 +275,7 @@
 
                     </li>
 
-                    <li>
+                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
                         <a href="<?php echo base_url("announcement");?>">
                             <i class="fa fa-bullhorn"></i>
                             <span>Announcement</span>
@@ -282,14 +283,14 @@
 
                     </li>
 
-                    <li>
-                        <a href="users.html">
+                    <li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
+                        <a href="<?php echo base_url("user");?>">
                             <i class="fa fa-users"></i>
                             <span>Users</span>
                         </a>
                     </li>
 					
-					<li>
+					<li <?php echo ($active =="dashboard")? "class='active'" : "" ?>>
                         <a class="dropdown-toggle">
                             <i class="fa fa-globe"></i>
                             <span>Support</span>
@@ -298,7 +299,7 @@
 
                         <ul class="submenu">
                             <li><a href="tickets.html" >Tickets</a></li>
-                            <li><a href="departments.html">Departments</a></li>
+                            <li><a href="<?php echo base_url("support");?>">Departments</a></li>
                         </ul>
                     </li>
                 </ul>
