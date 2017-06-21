@@ -1,5 +1,7 @@
 /* --- Edited SMD RCS --- */
 /* Breadcrumb */
+
+
 .breadcrumb .fa.fa-circle-o{
     font-size: 10px;
 }
@@ -94,7 +96,12 @@
 .box-edit .form-group .inline-input.right{
     padding-left: 3px;
 }
-
+.mail-content-announcement {
+    margin-left: 0px;
+}
+.distance{
+		padding-bottom: 17px;
+	}
 
 @media screen and (max-width: 1359px){
     .column-edit{
@@ -187,4 +194,10 @@
     .box-edit .form-group .controls > label{
         font-weight: normal;
     }
+}
+
+.panel-invoice{
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
