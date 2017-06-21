@@ -91,7 +91,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <img class="img-responsive img-thumbnail" src="../img/demo/profile-picture.jpg" alt="profile picture" width="200px" height="200px" style="float:right;">
+                                                    <img class="img-responsive img-thumbnail" src="<?php echo base_url("assets");?>/../img/demo/profile-picture.jpg" alt="profile picture" width="200px" height="200px" style="float:right;">
                                                 </div>
                                             </div>
                                             <hr/>
@@ -323,7 +323,7 @@
                                                     <h3><strong>Client's Site</strong></h3>
                                                     <div class="row">
                                                         <div class="col-md-3">
-                                                            <img class="img-responsive img-thumbnail" src="../img/demo/profile-picture.jpg" alt="profile picture">
+                                                            <img class="img-responsive img-thumbnail" src="<?php echo base_url("assets");?>/../img/demo/profile-picture.jpg" alt="profile picture">
                                                         </div>
                                                         <div class="col-md-9">
                                                             <div class="row">
@@ -382,7 +382,7 @@
                                                     <hr/>
                                                     <div class="row">
                                                         <div class="col-md-3">
-                                                            <img class="img-responsive img-thumbnail" src="../img/demo/profile-picture.jpg" alt="profile picture">
+                                                            <img class="img-responsive img-thumbnail" src="<?php echo base_url("assets");?>/../img/demo/profile-picture.jpg" alt="profile picture">
                                                         </div>
                                                         <div class="col-md-9">
                                                             <div class="row">
