@@ -4,7 +4,10 @@
 	class Support extends CI_Controller {
 
 		public function index(){
-			//list
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('support/departments.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function detail(){
 			//detail ticket

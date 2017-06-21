@@ -3,7 +3,10 @@
 
 	class User extends CI_Controller {
 		public function index(){
-			//list
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('user/user.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function add(){
 			//page add

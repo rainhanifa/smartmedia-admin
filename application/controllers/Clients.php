@@ -3,10 +3,16 @@
 
 	class Clients extends CI_Controller {
 		public function index(){
-			// list client
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('clients/clients.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function detail(){
-			// detail client
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('clients/clients_profile.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function add(){
 			// add page	
