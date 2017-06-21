@@ -59,36 +59,36 @@
                                     <td>ibnuaja@gmail.com</td>
                                     <td>Ibnu Shodiqin</td>
                                     <td>Client</td>
-                                    <td><a href="#" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
-                                        <a href="#" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
+                                    <td><a href="#" class="btn btn-lime"><i class="fa fa-user"></i> Reset Password</a>
+                                        <a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> Deactivate</a>
+                                    </td>
                                 </tr>
                                 <tr>                               
                                     <td><a href="">3</a></td>
                                     <td>Dimas</td>
                                     <td>Virdana</td>
                                     <td>dimasgundam@gmail.com</td>
-                                    <td><a href="#" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
-                                        <a href="#" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
+                                    <td><a href="#" class="btn btn-lime"><i class="fa fa-user"></i> Reset Password</a>
+                                        <a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> Deactivate</a>
+                                    </td>
                                 </tr>
                                 <tr>                               
                                     <td><a href="">4</a></td>
                                     <td>Handharbeni</td>
                                     <td>Muhammad</td>
                                     <td>mhandharbeni@gmail.com</td>
-                                    <td><a href="#" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
-                                        <a href="#" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
+                                    <td><a href="#" class="btn btn-lime"><i class="fa fa-user"></i> Reset Password</a>
+                                        <a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> Deactivate</a>
+                                    </td>
                                 </tr>
                                 <tr>                               
                                     <td><a href="">5</a></td>
                                     <td>Luqman</td>
                                     <td>Hakim</td>
                                     <td>cakmen@gmail.com</td>
-                                    <td><a href="#" class="btn btn-lime"><i class="fa fa-user"></i> Profile</a>
-                                        <a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> Invoice</a>
-                                        <a href="#" class="btn btn-gray"><i class="fa fa-desktop"></i> Sites</a></td>
+                                    <td><a href="#" class="btn btn-lime"><i class="fa fa-user"></i> Reset Password</a>
+                                        <a href="#" class="btn btn-info"><i class="fa fa-tasks"></i> Deactivate</a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>

@@ -9,7 +9,10 @@
 			$this->load->view('template/footer-admin.php');
 		}
 		public function invoice(){
-			//detail
+			$this->load->view('template/header-admin.php');
+			$this->load->view('template/navbar-admin.php');
+			$this->load->view('transaction/detail_invoice.php');
+			$this->load->view('template/footer-admin.php');
 		}
 		public function awaiting(){
 			$this->load->view('template/header-admin.php');

@@ -247,7 +247,7 @@
                                                                     <td>Rp 123.000</td>
                                                                     <td>13/05/2017</td>
                                                                     <td><span class="label label-success">Paid</span></td>
-                                                                    <td><a href="detail_invoice.html">Detail</a></td>
+                                                                    <td><a href="<?php echo base_url("clients/detail");?>">Detail</a></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>941237</td>
@@ -256,7 +256,7 @@
                                                                     <td>Rp 25.000</td>
                                                                     <td>14/05/2017</td>
                                                                     <td><span class="label label-gray">Canceled</span></td>
-                                                                    <td><a href="detail_invoice.html">Detail</a></td>
+                                                                    <td><a href="<?php echo base_url("clients/detail");?>">Detail</a></td>
                                                                 </tr>
                                                                 <tr class="table-flag-orange">
                                                                     <td>771263</td>
@@ -265,7 +265,7 @@
                                                                     <td>Rp 90.000</td>
                                                                     <td>15/05/2017</td>
                                                                     <td><span class="label label-success">Paid</span></td>
-                                                                    <td><a href="detail_invoice.html">Detail</a></td>
+                                                                    <td><a href="<?php echo base_url("clients/detail");?>">Detail</a></td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td>123123</td>
@@ -274,7 +274,7 @@
                                                                     <td>Rp 64.000</td>
                                                                     <td>16/05/2017</td>
                                                                     <td><span class="label label-warning">Unpaid</span></td>
-                                                                    <td><a href="detail_invoice.html">Detail</a></td>
+                                                                    <td><a href="<?php echo base_url("clients/detail");?>">Detail</a></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
