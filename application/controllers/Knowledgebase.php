@@ -29,21 +29,16 @@
 		public function category($action="list"){
 			switch($action){
 				case 'add'		: //view category add
-					$this->load->view('template/header-admin.php');
-					$this->load->view('template/navbar-admin.php');
-					$this->load->view('knowledgebase/knowledgebase_create.php');
-					$this->load->view('template/footer-admin.php');
 								  break;
 				case 'update'	: //view category update
-					$this->load->view('template/header-admin.php');
-					$this->load->view('template/navbar-admin.php');
-					$this->load->view('knowledgebase/knowledgebase_update.php');
-					$this->load->view('template/footer-admin.php');
 								  break;
 				case 'delete'	: //action category delete
 								  break;
 				default 		: //view category list;
-									echo "list";
+					$this->load->view('template/header-admin.php');
+					$this->load->view('template/navbar-admin.php');
+					$this->load->view('knowledgebase/articles_category.php');
+					$this->load->view('template/footer-admin.php');
 								  break;
 			}
 		}
