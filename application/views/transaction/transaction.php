@@ -1,3 +1,4 @@
+            
             <!-- BEGIN Content -->
             <div id="main-content">
                 <!-- BEGIN Page Title -->
@@ -92,11 +93,16 @@
                             </tbody>
                         </table>
                     </div>
-
-                    <p class="text-right">
-                        1-12 of 46
-                        <a class="btn btn-circle disabled" href="#"><i class="fa fa-angle-left"></i></a>
-                        <a class="btn btn-circle" href="#"><i class="fa fa-angle-right"></i></a>
-                    </p>
                 </div>
                 <!-- END Main Content -->
+
+                <script type="text/javascript" src="<?php echo base_url('assets')?>/assets/data-tables/jquery.dataTables.js"></script>
+                <script type="text/javascript" src="<?php echo base_url('assets')?>/assets/data-tables/bootstrap3/dataTables.bootstrap.js"></script>
+                <script type="text/javascript">
+                    $(document).ready( function() {
+                      $('#transaction-table').dataTable( {
+                        "aoColumnDefs": [
+                          { "bSortable": true, "aTargets": [ 7 ] }
+                        ] } );
+                    } );
+                </script>
