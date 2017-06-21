@@ -268,8 +268,8 @@
 
                         <!-- BEGIN Submenu -->
                         <ul class="submenu">
-                            <li><a href="articles.html">Articles</a></li>
-                            <li><a href="articles_category.html">Category</a></li>
+                            <li><a href="<?php echo base_url("knowledgebase");?>">Articles</a></li>
+                            <li><a href="<?php echo base_url("knowledgebase/category");?>">Category</a></li>
                         </ul>
                         <!-- END Submenu -->
 
