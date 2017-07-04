@@ -1,13 +1,13 @@
 <?php 
-	Class Agama extends CI_Model{
-		var $table = 'db_agama'; 
+	Class Smartmedia extends CI_Model{
+		var $table = 'announcements'; 
 
 		function save($data){
 			$this->db->insert($this->table, $data);
 			return true;
 		}
 
-		function getAgama($where = []){
+		function getAnnouncements($where = []){
 			$query = $this->db->from($this->table);
 
 			if(count($where) > 0) { $query->where($where); }
