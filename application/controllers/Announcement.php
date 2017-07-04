@@ -21,14 +21,18 @@
 			//detail
 		}
 		public function add(){
-			if($_POST){
-				$title = $this->input->post('');
-				$content = ..;
+			if (isset($_POST['submit'])){
+				$title = $this->input->post('title');
+				$content = $this->input->post('content');
+				$date = date("Y-m-d");
 
-				$announcement_post = array( "nama_field_di_db" => $nama_variabel_inputan
+				$announcement_post = array( "title_announcement" => $title,
+											"content_announcement" => $content,
+											"date_announcement" => $date
 										);
-				$this->db->insert("announcement",$announcement_post);
-				$this->session->set_flashdata("nama_variable_flashdata", '
+				$this->db->insert("announcements",$announcement_post);
+
+				$this->session->set_flashdata("warning", '
                 <div class="alert alert-success">
                     <button class="close" data-dismiss="alert">×</button>
                     <strong>Berhasil menyimpan</strong>

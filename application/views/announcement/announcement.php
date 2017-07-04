@@ -20,7 +20,6 @@
                     </ul>
                 </div>
                 <!-- END Breadcrumb -->
-                <?php echo $nama_variable_flash?>
 			
 				<!-- Modal -->
                 <div class="modal fade modal-white" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
