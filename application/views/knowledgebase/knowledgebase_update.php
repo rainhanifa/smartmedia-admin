@@ -34,32 +34,29 @@
                 <div class="box">
                     <div class="col sm-12">     
 						<div class="mail-content-announcement">
-							<form class="mail-compose form-horizontal" action="#">
+							<form class="mail-compose form-horizontal" action="<?php echo base_url("knowledgebase/add");?>" method="post">
 								<div class="form-group">
 									<label for="inputlasttname" class="col-sm-1 control-label">Title</label>
 										<div class="col-sm-11">
-											<input type="text" class="form-control" placeholder>
+											<input type="text" class="form-control" name="title">
 										</div>		
 								</div>
 								<div class="form-group">		
 									<label for="inputcountry" class="col-sm-1 control-label">Category</label>
 									<div class="col-sm-11">
-										<select class="form-control">
-											<option>Category</option>
-											<option>Website</option>
-											<option>Web Builder</option>
-											<option>Hosting</option>
-											<option>Voucher</option>
-											<option>Payment</option>
-										</select>
-									</div>
+                                        <select class="form-control" name="category">
+                                            <?php foreach($category as $kategori){?>
+                                            <option value="<?php echo $kategori['id_category']?>"><?php echo $kategori['name_category']?></option>
+                                            <?php }?>
+                                        </select>
+                                    </div>
 								</div>	
 								
 								<div class="col sm-10">		
 									<p><textarea class="form-control wysihtml5" rows="6">textarea wyswyg</textarea></p>
 								</div>	
 								<p>
-									<input type="button" class="btn" value="Submit">
+									<input type="submit" class="btn" value="Submit">
 								</p>
 							</form>	
 						</div>								

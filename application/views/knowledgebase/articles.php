@@ -91,7 +91,28 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <?php 
+                                    $counter = 0;
+                                    foreach($articles as $list){
+                                        $counter++;
+                                       
+                                ?>
                                 <tr>                               
+                                    <td><?php $counter;?></td>
+                                    <td><?php echo $list['title_articles']?></td>
+                                    <td>Administrator</td>
+                                    <td>30/05/2017</td>
+                                    <td><?php echo $list['category_articles']?></td>
+                                    <td> 
+                                        <div class="make-switch switch-mini">
+                                            <input type="checkbox" checked />
+                                        </div>
+                                    </td>
+                                    <td><a href="<?php echo base_url("knowledgebase/update/").$list['id_articles'];?>" class="glyphicon glyphicon-pencil"></a></td>
+                                    <td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
+                                </tr>
+                                <?php }?>
+                                <!-- <tr>                               
                                     <td>1</td>
 									<td>How to Create Website</td>
 									<td>Administrator</td>
@@ -149,7 +170,7 @@
 									</td>
 									<td><a href="<?php echo base_url("knowledgebase/update");?>" class="glyphicon glyphicon-pencil"></a></td>
 									<td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
-                                </tr>                                                       
+                                </tr> -->                                                       
                             </tbody>
                         </table>
                 </div>
