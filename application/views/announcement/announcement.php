@@ -20,10 +20,7 @@
                     </ul>
                 </div>
                 <!-- END Breadcrumb -->
-                <div class="alert alert-info">
-                    <button class="close" data-dismiss="alert">×</button>
-                    <strong>Latest Info! </strong> The page has been added.
-                </div>
+                <?php echo $nama_variable_flash?>
 			
 				<!-- Modal -->
                 <div class="modal fade modal-white" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -64,7 +61,22 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>                               
+                            <?php 
+                                $counter = 0;
+                                foreach($announcement as $list){
+                                    $counter++;
+                            ?>
+                            <tr>   
+                                    <td><?php $counter;?></td>
+                                    <td><?php echo $list['title_announcement']?></td>
+                                    <td>Administrator</td>
+                                    <td>30/05/2017</td>
+                                    <td><a href="<?php echo base_url('announcement/update')?>" class="glyphicon glyphicon-pencil"></a></td>
+                                    <td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
+                                    
+                                </tr>
+                            <?php  } ?>
+                                <!--tr>                               
                                     <td>1</td>
 									<td>How to Create Website</td>
 									<td>Administrator</td>
@@ -98,7 +110,7 @@
 									<td>30/05/2017</td>
 									<td><a href="<?php echo base_url('announcement/update')?>" class="glyphicon glyphicon-pencil"></a></td>
 									<td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
-                                </tr>                                                       
+                                </tr -->                                                       
                             </tbody>
                         </table>
                 </div>
