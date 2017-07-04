@@ -20,32 +20,27 @@
                     </ul>
                 </div>
                 <!-- END Breadcrumb -->
-                <div class="alert alert-info">
-                    <button class="close" data-dismiss="alert">×</button>
-                    <strong>Latest Info! </strong> The page has been added.
-                </div>
-                <!-- BEGIN Main Content -->
-               
-                <div class="alert alert-success">
-                    <button class="close" data-dismiss="alert">×</button>
-                    <strong>Available Credit Balance:  </strong> You have a credit balance of Rp. 667,00 and this will be automatically applied to any new invoices
-                </div>                
 
+                <?php echo $this->session->flashdata("warning")?>  
+
+                <!-- BEGIN Main Content -->              
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box">
                             <div class="box-content">
                                 <div>
-                                    <form class="mail-compose form-horizontal" action="#">
-										<div class="form-group">
+                                    <?php foreach ($announcements as $announ): ?>
+                                    <form class="mail-compose form-horizontal" action="<?php echo base_url("announcement/update");?>" method="post">
+										<input type="hidden" >
+                                        <div class="form-group">
 											<label for="inputlasttname" class="col-sm-1 control-label">Title</label>
 												<div class="col-sm-11">
-													<input type="text" class="form-control" placeholder>
+													<input type="text" class="form-control" name="title" value="<?php echo $announ->student_id;?>">
 												</div>
 										</div> 
-										<p><textarea class="form-control wysihtml5" rows="6">textarea wyswyg</textarea></p>
+										<p><textarea class="form-control wysihtml5" rows="6" name="content">textarea wyswyg</textarea></p>
 										<p>
-											<input type="button" class="btn" value="Submit">                                   
+											<input type="submit" class="btn" value="Submit" name="submit">                                   
 										</p>
                                     </form>
                                 </div>
