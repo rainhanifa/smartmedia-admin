@@ -34,7 +34,7 @@
 
                 <div class="box">
                             
-                    <div class="table-responsive">
+                   
                         <table class="table table-advance" id="transaction-table">
                             <thead class="table-flag-blue">
                                 <tr>
@@ -93,16 +93,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+                
                 <!-- END Main Content -->
 
-                <script type="text/javascript" src="<?php echo base_url('assets')?>/assets/data-tables/jquery.dataTables.js"></script>
-                <script type="text/javascript" src="<?php echo base_url('assets')?>/assets/data-tables/bootstrap3/dataTables.bootstrap.js"></script>
-                <script type="text/javascript">
-                    $(document).ready( function() {
-                      $('#transaction-table').dataTable( {
-                        "aoColumnDefs": [
-                          { "bSortable": true, "aTargets": [ 7 ] }
-                        ] } );
-                    } );
-                </script>
+                
