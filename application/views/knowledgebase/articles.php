@@ -24,23 +24,8 @@
                     <button class="close" data-dismiss="alert">×</button>
                     <strong>Latest Info! </strong> The page has been added.
                 </div>
-			
-				<!-- Modal -->
-                <div class="modal fade modal-white" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content infotrophy-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel">Delete this article?</h4>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn" data-dismiss="modal">CANCEL</button>
-								<button class="btn btn-info" data-dismiss="modal">DELETE</button>
-                            </div>
-                        </div>
-                        <!-- end modal-content -->
-                    </div>
-                </div>
-				<!-- END Modal-->
+                
+				
 				<!-- Modal2 -->
                 <div class="modal fade modal-white" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
@@ -97,6 +82,22 @@
                                         $counter++;
                                        
                                 ?>
+                                <!-- Modal -->
+                                <div class="modal fade modal-white" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content infotrophy-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Delete this article?</h4>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn" data-dismiss="modal">CANCEL</button>
+                                                <a href="<?php echo base_url("knowledgebase/delete/").$list['id_articles'];?>" ><button class="btn btn-info" data-dismiss="modal">DELETE</button></a>
+                                            </div>
+                                        </div>
+                                        <!-- end modal-content -->
+                                    </div>
+                                </div>
+                                <!-- END Modal-->
                                 <tr>                               
                                     <td><?php $counter;?></td>
                                     <td><?php echo $list['title_articles']?></td>

@@ -24,7 +24,6 @@
 
                
                 <?php foreach ($articles as $art): ?>
-               
 
                 <div class="box">
                     <div class="col sm-12">     
