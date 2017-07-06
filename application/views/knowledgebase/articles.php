@@ -20,27 +20,12 @@
                     </ul>
                 </div>
                 <!-- END Breadcrumb -->
-                <div class="alert alert-info">
+               <!--  <div class="alert alert-info">
                     <button class="close" data-dismiss="alert">×</button>
                     <strong>Latest Info! </strong> The page has been added.
-                </div>
-			
-				<!-- Modal -->
-                <div class="modal fade modal-white" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content infotrophy-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel">Delete this article?</h4>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn" data-dismiss="modal">CANCEL</button>
-								<button class="btn btn-info" data-dismiss="modal">DELETE</button>
-                            </div>
-                        </div>
-                        <!-- end modal-content -->
-                    </div>
-                </div>
-				<!-- END Modal-->
+                </div> -->
+                
+				
 				<!-- Modal2 -->
                 <div class="modal fade modal-white" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
@@ -72,7 +57,8 @@
                 <div class="alert alert-success">
                     <button class="close" data-dismiss="alert">×</button>
                     <strong>Available Credit Balance:  </strong> You have a credit balance of Rp. 667,00 and this will be automatically applied to any new invoices
-                </div>                
+                </div>        
+                <?php echo $this->session->flashdata("warning")?>         
 
                 <div class="box">
                     <a href="<?php echo base_url("knowledgebase/add");?>" class="btn btn-info">ADD NEW</a>
@@ -91,25 +77,42 @@
                                 </tr>
                             </thead>
                             <tbody>
+
                                 <?php 
                                     $counter = 0;
                                     foreach($articles as $list){
                                         $counter++;
                                        
                                 ?>
+                                <!-- Modal -->
+                                <div class="modal fade modal-white" id="delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content infotrophy-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Delete this article?</h4>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn" data-dismiss="modal">CANCEL</button>
+                                                <a class="btn btn-info btn-ok">DELETE</a>
+                                            </div>
+                                        </div>
+                                        <!-- end modal-content -->
+                                    </div>
+                                </div>
+                                <!-- END Modal-->
                                 <tr>                               
                                     <td><?php $counter;?></td>
                                     <td><?php echo $list['title_articles']?></td>
                                     <td>Administrator</td>
-                                    <td>30/05/2017</td>
-                                    <td><?php echo $list['category_articles']?></td>
+                                    <td><?php echo $list['date_articles']?></td>
+                                    <td><?php echo $list['name_category']?></td>
                                     <td> 
                                         <div class="make-switch switch-mini">
                                             <input type="checkbox" checked />
                                         </div>
                                     </td>
                                     <td><a href="<?php echo base_url("knowledgebase/update/").$list['id_articles'];?>" class="glyphicon glyphicon-pencil"></a></td>
-                                    <td><a data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
+                                    <td><a data-href="<?php echo base_url("knowledgebase/delete/").$list['id_articles'];?>" data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
                                 </tr>
                                 <?php }?>
                                 <!-- <tr>                               
@@ -175,3 +178,8 @@
                         </table>
                 </div>
                 <!-- END Main Content -->
+                <script type="text/javascript">
+                    $('#delete').on('show.bs.modal', function(e) {
+                        $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+                    });
+                </script>       
