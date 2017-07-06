@@ -29,7 +29,7 @@
                 </div>                
 
                 <?php echo $this->session->flashdata("warning")?>
-                
+
                 <div class="box">
                     <a href="<?php echo base_url("announcement/add");?>" class="btn btn-info">ADD NEW</a>
 					<br/>
@@ -71,7 +71,7 @@
                                     <td><?php $counter;?></td>
                                     <td><?php echo $list['title_announcement']?></td>
                                     <td>Administrator</td>
-                                    <td>30/05/2017</td>
+                                    <td><?php echo $list['date_announcement']?></td>
                                     <td><a href="<?php echo base_url('announcement/update/').$list['id_announcement']?>" class="glyphicon glyphicon-pencil"></a></td>
                                     <td><a data-href="<?php echo base_url('announcement/delete/').$list['id_announcement']?>" data-toggle="modal" data-target="#delete" class="glyphicon glyphicon-trash"></a></td>
                                      
