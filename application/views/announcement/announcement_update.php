@@ -7,7 +7,7 @@
                     </div>
                 </div>
                 <!-- END Page Title -->
-
+ 
                <!-- BEGIN Breadcrumb -->
                 <div id="breadcrumbs">
                     <ul class="breadcrumb">
@@ -24,24 +24,28 @@
                 <?php echo $this->session->flashdata("warning")?>  
 
                 <!-- BEGIN Main Content -->              
+                                    <?php 
+                                        foreach ($announcement as $anon):
+                                    ?>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="box">
                             <div class="box-content">
                                 <div>
-                                    <?php foreach ($announcements as $announ): ?>
                                     <form class="mail-compose form-horizontal" action="<?php echo base_url("announcement/update");?>" method="post">
-										<input type="hidden" >
+                                        <input type="hidden" >
                                         <div class="form-group">
-											<label for="inputlasttname" class="col-sm-1 control-label">Title</label>
-												<div class="col-sm-11">
-													<input type="text" class="form-control" name="title" value="<?php echo $announ->student_id;?>">
+                                        <input type="hidden" name="id_announcement" value="<?php echo $anon->id_announcement?>">
+                                            <label for="inputlasttname" class="col-sm-1 control-label">Title</label>
+                                                <div class="col-sm-11">
+													<input type="text" class="form-control" name="title" value="<?php echo $anon->title_announcement;?>">
 												</div>
 										</div> 
-										<p><textarea class="form-control wysihtml5" rows="6" name="content">textarea wyswyg</textarea></p>
-										<p>
-											<input type="submit" class="btn" value="Submit" name="submit">                                   
-										</p>
+										<p><textarea class="form-control wysihtml5" rows="6" name="content" ><?php echo $anon->content_announcement;?></textarea></p>
+                                        <?php endforeach; ?>
+                                        <p>
+                                            <input type="submit" class="btn" value="Submit" name="submit">                                   
+                                        </p>
                                     </form>
                                 </div>
                             </div>
