@@ -10,7 +10,6 @@
 	    }
 
 		public function index(){
-			// $data['articles'] = $this->db->query('SELECT * FROM articles')->result_array();
 			$data['articles'] = $this->db->query('SELECT articles.*, article_category.name_category FROM articles
 												 INNER JOIN article_category ON articles.category_articles = article_category.id_category')->result_array();
 
