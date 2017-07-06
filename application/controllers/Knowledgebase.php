@@ -46,30 +46,36 @@
 			$this->load->view('knowledgebase/knowledgebase_create.php',$data);
 			$this->load->view('template/footer-admin.php');
 		}
-		public function update($id_articles){
+		public function update($id_articles = 0){
+			if (isset($_POST['submit'])){
+				$title = $this->input->post('title');
+				$content = $this->input->post('content');
+				$id_articles = $this->input->post('id_articles');
+				$date = date("Y-m-d");
+				$category = $this->input->post('category');
+
+				$knowledgebase_post = array("title_articles" => $title, 
+											"content_articles" => $content,
+											"date_articles" => $date, 							
+											"category_articles" => $category);
+				$this->db->where('id_articles', $id_articles);
+				$this->db->update("articles",$knowledgebase_post);
+
+				
+
+				$this->session->set_flashdata("warning", '
+                <div class="alert alert-success">
+                    <button class="close" data-dismiss="alert">×</button>
+                    <strong>Berhasil menyimpan</strong>
+                </div>');
+
+			}
+			//ambil daftar kategori
+			$data['category'] = $this->db->query('SELECT * FROM article_category')->result_array();
+			
 			$data['articles'] = $this->db->query("SELECT * FROM articles WHERE id_articles = ".$id_articles)->result();
 
-			// 	if (isset($_POST['submit'])){
-			// 	$title = $this->input->post('title');
-			// 	$content = $this->input->post('content');
-			// 	$date = date("Y-m-d");
-			// 	$category = $this->input->post('category');
-
-			// 	$knowledgebase_post = array("title_articles" => $title, 
-			// 								"content_articles" => $content,
-			// 								"date_articles" => $date, 							
-			// 								"category_articles" => $category);
-			// 	$this->db->update("articles",$knowledgebase_post);
-
-			// 	$this->session->set_flashdata("warning", '
-   //              <div class="alert alert-success">
-   //                  <button class="close" data-dismiss="alert">×</button>
-   //                  <strong>Berhasil menyimpan</strong>
-   //              </div>');
-			// }
-			// //ambil daftar kategori
-			// $data['category'] = $this->db->query('SELECT * FROM article_category')->result_array();
-
+			
 			$this->load->view('template/header-admin.php');
 			$this->load->view('template/navbar-admin.php');
 			$this->load->view('knowledgebase/knowledgebase_update.php', $data);
